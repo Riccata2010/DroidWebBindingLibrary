@@ -1,0 +1,43 @@
+<html>
+<head>
+    <meta name="viewport"
+          content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans&subset=latin-ext,latin'
+          rel='stylesheet' type='text/css'>
+    <meta charset="UTF-8">
+
+    <title>DroidWebBinding-example</title>
+
+    <link rel="stylesheet" href="default.css">
+
+    <script type="text/JavaScript">
+
+			function login() {
+
+				var user = document.getElementById('user').value;
+				var pwd = document.getElementById('pwd').value;
+
+				if (user !== null && user.length > 0)
+				    BIND.callMyLogin(user, pwd);
+			}
+
+
+    </script>
+
+</head>
+<body class="login">
+<div id="login">
+    <div class="field">
+        <span>${lbl.user}</span>
+        <input id="user" type="text" value=""/>
+    </div>
+    <div class="field">
+        <span>${lbl.password}</span>
+        <input id="pwd" type="password" value=""/>
+    </div>
+    <button id="b_login" class="ok" onclick="login()">${btn.login}</button>
+</div>
+<div id="welcome" class="info">${welcome.message}</div>
+<div id="ver" class="footer">${app.version}</div>
+</body>
+</html>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">DroidWebBinding</string>
+    <string name="btn_login">Login</string>
+    <string name="lbl_password">Password</string>
+    <string name="user">User Name</string>
+    <string name="welcome_message">Welcome to Droid Web Binding Library</string>
+    <string name="login_message">Your User is:</string>
+    <string name="exit_message">Press two times to exit</string>
+</resources>
